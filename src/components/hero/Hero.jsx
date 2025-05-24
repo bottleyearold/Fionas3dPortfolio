@@ -1,42 +1,56 @@
-import "./Hero.css"
-import Speech from "./Speech" 
+import "./Hero.css";
+import fionaImage from '../../assets/fiona.png';
+import insta from '../../assets/instagram.png';
+import git from '../../assets/github.png';
+import linkdln from '../../assets/linkdln.png';
+import Speech from "./Speech"; 
 
 const Hero = () => {
     return <div className='hero'>
         <div className="hSection left">
             <h1 className="hTitle">
-                Hey There,
+                Hi,
                 <br />
                 <span>I'm Fiona!</span>
             </h1>
-            <div className="awards">
-                <h2>Top Rated Designer</h2>
-                <p> EHJBEXH chdjbchfb fhvjfvhf hrfbjhvcf djhcd</p>
-                <div className="awardList">
-                    <img src="/award1.png" alt=""/>
-                    <img src="/award1.png" alt=""/>
-                    <img src="/award1.png" alt=""/>
+            <div className="socials">
+                <h2>Software Developer  + Student </h2>
+                <p>A passion for software development and finance</p>
+                <div className="socialsList">
+                    <img src={linkdln} alt="linkdln logo" width={50} height={50}/>
+                    <img src={insta} alt="Instagram Logo" width={50} height={50}/>
+                    <img src={git} alt="Github Logo" width={50} height={50}/>
                 </div>
             </div>
         </div>
 
         <div className="hSection right">
-            <div className="follow">
+            <div className="fiona-image">
                 <a href="/">
-                    <img src="" alt="" />
-                </a>
-                <a href="/">
-                    <img src="" alt="" />
-                </a>
-                <a href="/">
-                    <img src="" alt="" />
+                    <img src={fionaImage} alt="UVA logo" width={100} />
                 </a>
             </div>
             <Speech/>
 
             <a href="/#contact" className="contactLink">
                 <div className="contactButton">
-                    
+                    <svg viewBox= "0 0 200 200" width = "150" height = "150">
+                        <circle cx="100" cy="100" r="90" fill="white"/>
+                        <path
+                            id="innerCirclePath"
+                            fill = "none"
+                            d = "M 100,100 m -60,0 a 60,60 0 1,1 120,0 a 60, 60 0 1,1 -120,0"
+                        />
+                        <text className="circleText">
+                            <textPath href="#innerCirclePath">Hire Now</textPath>
+                        </text>
+                        <text className="circleText">
+                            <textPath href="#innerCirclePath" startOffset="44%">Contact Me</textPath>
+                        </text>
+                    </svg>
+                    <div className="finger-icon">
+
+                    </div>
                 </div>
             </a>
         </div>
