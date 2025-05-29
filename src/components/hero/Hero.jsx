@@ -6,7 +6,8 @@ import linkdln from '../../assets/linkdln.png';
 import Speech from "./Speech"; 
 
 const Hero = () => {
-    return <div className='hero'>
+    return  (
+    <section className="hero">
         <div className="hSection left">
             <h1 className="hTitle">
                 Hi,
@@ -17,9 +18,9 @@ const Hero = () => {
                 <h2>Software Developer  + Student </h2>
                 <p>A passion for software development and finance</p>
                 <div className="socialsList">
-                    <img src={linkdln} alt="linkdln logo" width={50} height={50}/>
-                    <img src={insta} alt="Instagram Logo" width={50} height={50}/>
-                    <img src={git} alt="Github Logo" width={50} height={50}/>
+                    <img src={linkdln} alt="linkdln logo"/>
+                    <img src={insta} alt="Instagram Logo"/>
+                    <img src={git} alt="Github Logo"/>
                 </div>
             </div>
         </div>
@@ -54,7 +55,8 @@ const Hero = () => {
                 </div>
             </a>
         </div>
-    </div>
+    </section>
+  );
     
 }
 

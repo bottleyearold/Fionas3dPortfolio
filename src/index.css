@@ -4,9 +4,12 @@
     box-sizing: border-box;
 }
 
+
+
 html{
     scroll-snap-type: y mandatory;
     scroll-behavior: smooth;
+    overscroll-behavior: none;
 }
 
 body{
@@ -27,7 +30,13 @@ a{
     padding-right: 16px;
     margin-left: auto;
     margin-right: auto;
-}
+    height: 100vh; /* Make the container take full viewport height */
+    overflow-y: scroll; /* Enable vertical scrolling */
+    scroll-snap-type: y mandatory; /* Enable vertical mandatory snapping */
+    /* Add for smooth scrolling (optional, but nice) */
+    scroll-behavior: smooth;
+ }
+ 
 
 @media (min-width: 640px){
     .container{
@@ -41,7 +50,7 @@ a{
     }
 }
 
-@media (min-width: 1024){
+@media (min-width: 1024px){
     .container{
         max-width: 1024px;
     }
