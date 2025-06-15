@@ -2,6 +2,7 @@ import Hero from "./components/hero/Hero";
 import Services from "./components/services/Services";
 import Portfolio from "./components/portfolio/Porfolio";
 import Contact from "./components/contact/Contact";
+import TestShapes from "./components/hero/TestShapes";
 
 
 const App = () => {
@@ -20,6 +21,7 @@ const App = () => {
             <Contact/>
         </section>
       </div>
+      // <TestShapes/>
     )
   }
   

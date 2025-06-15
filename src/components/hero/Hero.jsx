@@ -4,6 +4,8 @@ import insta from '../../assets/instagram.png';
 import git from '../../assets/github.png';
 import linkdln from '../../assets/linkdln.png';
 import Speech from "./Speech"; 
+import TestShapes from "./TestShapes"; 
+import Shape from "./Shape"; 
 
 const Hero = () => {
     return  (
@@ -16,7 +18,7 @@ const Hero = () => {
             </h1>
             <div className="socials">
                 <h2>Software Developer  + Student </h2>
-                <p>A passion for software development and finance</p>
+                <p>A passion for software development and data science</p>
                 <div className="socialsList">
                     <img src={linkdln} alt="linkdln logo"/>
                     <img src={insta} alt="Instagram Logo"/>
@@ -26,13 +28,6 @@ const Hero = () => {
         </div>
 
         <div className="hSection right">
-            <div className="fiona-image">
-                <a href="/">
-                    <img src={fionaImage} alt="UVA logo" width={100} />
-                </a>
-            </div>
-            <Speech/>
-
             <a href="/#contact" className="contactLink">
                 <div className="contactButton">
                     <svg viewBox= "0 0 200 200" width = "150" height = "150">
@@ -54,6 +49,17 @@ const Hero = () => {
                     </div>
                 </div>
             </a>
+            <div className="shape-bg">
+                <TestShapes />
+            </div>
+            <div className="faceName">
+                <div className="fiona-image">
+                    <a href="/">
+                        <img src={fionaImage} alt="Fionas Image" width={580} />
+                    </a>
+                </div>
+                <Speech/>
+            </div>
         </div>
     </section>
   );
